@@ -1,0 +1,10 @@
+{
+  "name": "playlist-app",
+  "description": "first angular app",
+  "repository": "https://github.com/kripple/playlist-app",
+  "license": "MIT",
+  "version": "0.0.1",
+  "dependencies": {
+    "connect": "3.x"
+  }
+}
