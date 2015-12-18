@@ -26,4 +26,24 @@ angular.module('myApp', [])
       delete $scope.newSong;
     }
 
-}]);
+}])
+
+// Modified from: https://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/
+// Custom directive declaration
+.directive('playlist', function() {
+  return {
+    restrict: 'ECMA',
+    link: function(scope, element, attrs) {
+      var img = document.createElement('img');
+      img.src = 'http://bit.ly/1OchrJu';
+      img.style.width = "20%";
+ 
+      // directives as comment
+      if (element[0].nodeType === 8) {
+        element.replaceWith(img);
+      } else {
+        element[0].appendChild(img);            
+      }
+    }
+  };
+});

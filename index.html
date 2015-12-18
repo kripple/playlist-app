@@ -9,12 +9,15 @@
 
 <body>
    <div ng-controller="mainController">
-      <!-- Main screen -->
-      <h1>My Playlist</h1>
+
+      <!-- Call custom directive here -->
+      <p playlist></p>
+
       <ul>
         <li ng-repeat="song in songs">{{song.title}} by {{song.artist}}</li>
       </ul>
       <button ng-click="initNewSong()">Add song</button>
+
       <!-- New song form -->
       <hr>
       <form ng-show="newSong">
