@@ -1,8 +1,10 @@
 // App declaration
-angular.module('myApp', [])
+var myApp = angular.module('myApp', [])
 
 // Controller declaration
 .controller('mainController', ['$scope', function($scope) {
+
+    $scope.greeting = 'Hello World!';
 
     // create a storage object to hold your songs
     $scope.songs = [];
@@ -47,3 +49,8 @@ angular.module('myApp', [])
     }
   };
 });
+
+
+
+
+
