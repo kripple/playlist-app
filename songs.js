@@ -38,7 +38,9 @@ var myApp = angular.module('myApp', [])
     link: function(scope, element, attrs) {
       var img = document.createElement('img');
       img.src = 'http://bit.ly/1OchrJu';
-      img.style.width = "20%";
+      img.style.width = "10em";
+      img.style.paddingBottom = "9px";
+      img.style.margin = "40px 0 20px";
  
       // directives as comment
       if (element[0].nodeType === 8) {
